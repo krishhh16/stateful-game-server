@@ -1,7 +1,7 @@
-import {games} from "./store.ts";
+import { games } from "./store";
 
 export function startLogger() {
-  setInterval(() => {
-    console.log(games);
-  }, 5000) 
+    setInterval(() => {
+        console.log(games);
+    }, 4000)
 }

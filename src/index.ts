@@ -1,12 +1,12 @@
-import {games} from "./store.ts";
-import {startLogger} from "./logger.ts";
+import { games } from "./store";
+import { startLogger } from "./logger";
 
-startLogger(); 
+startLogger();
+
 setInterval(() => {
-  games.push({
-    id: Math.random().toString(),
-    whitePlayerName: "Alice",
-    blackPlayerName: "Denzel",
-    moves: []
-  })
-})
+    games.push({
+        "whitePlayer": "harkirat",
+        "blackPlayer": "jaskirat",
+        moves: []
+    })
+}, 5000)
