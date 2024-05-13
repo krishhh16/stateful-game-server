@@ -1,12 +1,10 @@
-import { games } from "./store";
+import { GameManager } from "./store";
 import { startLogger } from "./logger";
 
-startLogger();
 
+const games = new GameManager();
+startLogger();
+console.log('hello world')
 setInterval(() => {
-    games.push({
-        "whitePlayer": "harkirat",
-        "blackPlayer": "jaskirat",
-        moves: []
-    })
+    games.addMove(Math.random().toString(), "")
 }, 5000)
