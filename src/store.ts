@@ -5,7 +5,7 @@ interface Game {
     moves: string[];
 }
 
-class GameManager {
+export class GameManager {
     games: Game[] = [];
     private static instance: GameManager;
     private constructor() {
@@ -27,4 +27,3 @@ class GameManager {
     }
 }
 
-export const gameManager = GameManager.getInstance();

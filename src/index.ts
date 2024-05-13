@@ -1,10 +1,8 @@
-import { gameManager } from "./store";
+import { GameManager } from "./store";
 import { startLogger } from "./logger";
 
-
-const games = gameManager;
 startLogger();
 console.log('hello world')
 setInterval(() => {
-    games.addMove(Math.random().toString(), "")
+    GameManager.getInstance().addMove("12123", "")
 }, 5000)
